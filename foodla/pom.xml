@@ -7,7 +7,21 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>foodla Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+  		<javaee.version>7.0</javaee.version>
+  </properties>
+  
   <dependencies>
+   
+  <!--  Java EE -api   -->
+  <dependency>
+  	<groupId>javax</groupId>
+  	<artifactId>javaee-api</artifactId>
+  	<version>7.0</version>
+  	<scope>provided</scope>
+  </dependency>
+   
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>

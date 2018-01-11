@@ -8,12 +8,11 @@
 <spring:url var="images" value="/resources/images" />
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}"/>
-
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title>Foodla -${title}</title>
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -23,8 +22,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="${css}/style.css" rel="stylesheet" type="text/css"> </head>
 
+<title>Foodla -${title}</title>
+
+<script>
+	window.menu='${title}';
+</script>
+
 <body data-offset="60" data-spy="scroll" data-target=".navbar" id="myPage">
    
+   <div class="wrapper">
    <!-- Navigation -->
    <%@include file="./shared/navbar.jsp" %>
   
@@ -32,8 +38,15 @@
    <c:if test="${userClickHome==true }">
    	   <%@include file="home.jsp" %>
    </c:if>
+   
+   <!-- load only when user clicks all products-->
+   <c:if test="${userClickAllProducts==true  or userClickCategoryProducts==true}">
+   	   <%@include file="listProducts.jsp" %>
+   </c:if>
+   
+   
   
-  
+  <div class="content">
   
   <!-- Container (Services Section) -->
   <div id="services" class="container-fluid text-center">
@@ -89,18 +102,10 @@
   </div>
  
   <!-- Container (Location Section) -->
-  <div id="pricing" class="container-fluid">
-    <div class="text-center">
-      <h2>Browse By Cuisine</h2>
-      <h4>Choose from &nbsp;your favorite cuisine</h4>
-      <div class="row">
-        <div class="col-md-3 bg-dark">Bangaluru</div>
-        <div class="col-md-3 text-center">Pune</div>
-        <div class="col-md-3">Patna</div>
-        <div class="col-md-3">Kolkata</div>
-      </div>
-    </div>
-  </div>
+ <%@include file="./location.jsp" %>
+  
+  <!-- Container (Contact Section) -->
+  <%@include file="./contact.jsp" %>
   
   <!-- Container (Contact Section) -->
   <%@include file="./contact.jsp" %>
@@ -123,5 +128,9 @@
   <!-- jQuery -->
   <script src="${js}/jquery.js"></script>
   
+  <!-- myjquery -->
+  <script src="${js}/myapp.js"></script>
+  </div>
+  </div>
 </body>
 </html>

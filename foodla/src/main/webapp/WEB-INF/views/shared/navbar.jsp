@@ -16,15 +16,17 @@
         <a class="navbar-brand text-dark" href="page.jsp"> </a>
         <ul class="nav navbar-nav navbar-right">
           <a class="navbar-brand text-dark border border-dark" href="page.jsp"> </a>
-          <li>
+          <li id="login">
             <a class="navbar-brand text-dark" href="page.jsp"> </a>
             <a href="#"><strong><h4>Login</h4></strong></a>
           </li>
-          <li>
-            <a href="#"><strong><h4 class="w-25 h-25 p-0 mx-auto">Register</h4></strong></a>
-          </li>
-          <li>
+          
+          <li id="contact">
             <a href="${contextRoot}/contact" class="w-100"><strong><h4>Contact</h4></strong></a>
+          </li>
+          
+          <li id="listProducts">
+            <a href="${contextRoot}/show/all/products"class="w-100"><strong><h4>View Products</h4></strong></a>
           </li>
         </ul>
       </div>

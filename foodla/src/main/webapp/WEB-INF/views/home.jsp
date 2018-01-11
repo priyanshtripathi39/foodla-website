@@ -4,6 +4,8 @@
     <div class="container align-bottom">
       <form class="form-inline" action="/action_page.php">
         <div class="row">
+        
+        <%@include file="./shared/sidebar.jsp" %>
           <!-- <div class="col-md-8 input-group align-bottom">
             <input type="email" class="form-control input-lg" size="50" placeholder="Search food, restaurant etc" required="">
 		

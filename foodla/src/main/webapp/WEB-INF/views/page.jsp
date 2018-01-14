@@ -27,9 +27,6 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- bootstrap Core css -->
-<link href="${css}/bootstrap-min.css" rel="stylesheet">
- 
 <!-- bootstrap Readable Theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
  

@@ -27,7 +27,7 @@
           </li>
           
           <li id="listProducts">
-            <a href="${contextRoot}/show/all/products"class="w-100"><strong>View Products</strong></a>
+            <a href="${contextRoot}/show/all/products"class="w-100"><strong>Restro</strong></a>
           </li>
           
         </ul>

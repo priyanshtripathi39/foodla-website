@@ -54,6 +54,7 @@ public class PageController {
 	@RequestMapping(value= "/show/category/{id}/products")
 	public ModelAndView showcategoryProducts(@PathVariable("id") int id) {
 		ModelAndView mv=new ModelAndView("page");
+		
 		// category dao to fetch a single category
 		Category category=null;
 		
@@ -65,10 +66,10 @@ public class PageController {
 		mv.addObject("categories",categoryDAO.list()); 
 		
 		//passing the single categories
-		mv.addObject("categories",category); 
+		mv.addObject("category",category); 
 				
 		
-		mv.addObject("userClickcategoryProducts",true);
+		mv.addObject("userClickCategoryProducts",true);
 		return mv;
 	}
 	

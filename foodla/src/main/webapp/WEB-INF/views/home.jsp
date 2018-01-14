@@ -120,4 +120,3 @@
 	</div>
 	<!-- contact -->
   <%@include file="contact.jsp" %>
-	

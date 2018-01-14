@@ -7,7 +7,7 @@
            <span class="icon-bar"></span>
             </button>
         <a class="navbar-brand text-dark" href="${contextRoot}/home">
-        <img src="resources/images/logo.png" width="220px" height="70px"></a>
+        <img src="resources/images/logo.png" width="160px" height="40px"></a>
       </div>
       
       <a class="navbar-brand text-dark" href="page.jsp">  </a>
@@ -15,19 +15,21 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <a class="navbar-brand text-dark" href="page.jsp"> </a>
         <ul class="nav navbar-nav navbar-right">
-          <a class="navbar-brand text-dark border border-dark" href="page.jsp"> </a>
+          <a class="navbar-brand text-dark border border-dark" href="page.jsp"></a>
+          
           <li id="login">
             <a class="navbar-brand text-dark" href="page.jsp"> </a>
-            <a href="#"><strong><h4>Login</h4></strong></a>
+            <a href="#"><strong>Login</strong></a>
           </li>
           
           <li id="contact">
-            <a href="${contextRoot}/contact" class="w-100"><strong><h4>Contact</h4></strong></a>
+            <a href="${contextRoot}/contact" class="w-100"><strong>Contact</strong></a>
           </li>
           
           <li id="listProducts">
-            <a href="${contextRoot}/show/all/products"class="w-100"><strong><h4>View Products</h4></strong></a>
+            <a href="${contextRoot}/show/all/products"class="w-100"><strong>View Products</strong></a>
           </li>
+          
         </ul>
       </div>
     </div>

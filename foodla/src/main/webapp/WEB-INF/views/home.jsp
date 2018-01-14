@@ -1,14 +1,16 @@
 <div class="jumbotron text-center"
 	style="background: url(resources/images/foodla-background.png) no-repeat center;"
 	data-stellar-background-ratio="0.5 ">
-	<h1 class="text-center text-capitalize text-center">Turn You
+	<h1 class="text-center text-capitalize text-center">Turn Yours
 		Appetite Into Satisfaction</h1>
 	<p>Where there's Food there's Foodla</p>
 	<div class="container align-bottom">
-		<form class="form-inline" action="/action_page.php">
+		<form class="form-inline" action="/allProducts.jsp">
 			<div class="row">
 
 				<!-- <%@include file="./shared/sidebar.jsp"%> -->
+				
+				
 				<!-- <div class="col-md-8 input-group align-bottom">
             <input type="email" class="form-control input-lg" size="50" placeholder="Search food, restaurant etc" required="">
 		
@@ -40,8 +42,6 @@
 		</form>
 	</div>
 </div>
-
-<div class="content">
 
 	<!-- Container (Services Section) -->
 	<div id="services" class="container-fluid text-center">
@@ -118,3 +118,6 @@
 			</a>
 		</div>
 	</div>
+	<!-- contact -->
+  <%@include file="contact.jsp" %>
+	

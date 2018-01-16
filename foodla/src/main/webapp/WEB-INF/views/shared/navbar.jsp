@@ -6,8 +6,7 @@
           <span class="icon-bar"></span>
            <span class="icon-bar"></span>
             </button>
-        <a class="navbar-brand text-dark" href="${contextRoot}/home">
-        <img src="resources/images/logo.png" width="160px" height="40px"></a>
+        <a class="navbar-brand text-dark" href="${contextRoot}/home"><img src="resources/images/logo.jpg" width="160px" height="40px"></a>
       </div>
       
       <a class="navbar-brand text-dark" href="page.jsp">  </a>

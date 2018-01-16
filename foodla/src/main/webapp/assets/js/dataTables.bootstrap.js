@@ -30,6 +30,7 @@
 				// jQuery object that is used
 				$ = require('datatables.net')(root, $).$;
 			}
+			
 
 			return factory( $, root, root.document );
 		};

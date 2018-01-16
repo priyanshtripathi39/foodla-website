@@ -8,13 +8,12 @@
 <spring:url var="images" value="/resources/images" />
 
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
-
 <!DOCTYPE html>
 <html>
 
 <head>
 
-<meta charset="utf-8">
+<!-- <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -26,27 +25,49 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<!-- bootstrap Readable Theme -->
-<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+ -->
  
- <!-- Custom Css -->
-<link href="${css}/myapp.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Online Shopping Website Using Spring MVC and Hibernate">
+<meta name="author" content="Khozema Nullwala">
+<meta name="_csrf" content="${_csrf.token}">
+<meta name="_csrf_header" content="${_csrf.headerName}">
+ 
+<title>Foodla -${title}</title>
+
+<script>
+	window.menu = '${title}';
+	
+	window.contextRoot = '${contextRoot}'
+	
+</script>
+
+<!-- Bootstrap Core CSS -->
+<link href="${css}/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Readable Theme -->
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+
+
+<!-- Bootstrap DataTables -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
+
+<!-- Custom CSS -->
+<link href="${css}/myapp.css" rel="stylesheet">
 
 
 </head>
 
-<title>Foodla -${title}</title>
 
-<script>
-	window.menu='${title}';
-</script>
 
 <body data-offset="60" data-spy="scroll" data-target=".navbar"
 	id="myPage">
 
 	<div class="wrapper">
-
+ 
 		<!-- Navigation -->
 		<%@include file="./shared/navbar.jsp"%>
 
@@ -69,14 +90,23 @@
 			</c:if>
 
 		</div>
-		
+
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
 
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
 
-		<!-- myjquery -->
+		<!-- Bootstrap Core JavaScript -->
+		<script src="${js}/bootstrap.min.js"></script>
+		
+		<!-- DataTable Plugin -->
+		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!-- DataTable Bootstrap Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		
+		<!-- Self coded javascript -->
 		<script src="${js}/myapp.js"></script>
 	</div>
 

@@ -84,9 +84,13 @@
 			</c:if>
 
 			<!-- Container (Contact Section) -->
-
 			<c:if test="${userClickContact==true }">
 				<%@include file="contact.jsp"%>
+		 	</c:if>
+			
+			<!-- load only when user clicks show  products-->
+			<c:if test="${userClickShowProduct == true }">
+				<%@include file="singleProduct.jsp"%>
 			</c:if>
 
 		</div>
